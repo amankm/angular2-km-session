@@ -44,8 +44,21 @@
                       </div>
 
                       <div class="panel-body">
-                          <div class="form-group">                              
-                          </div>                          
+                          <div class="form-group">
+                            <input name="task" class="form-control" placeholder="Title">                                                        
+                          </div>  
+                          <div class="form-group">
+                            <input name="description" class="form-control" placeholder="Description">
+                          </div>
+                          <div class="form-group">
+                            <select name="priority" class="form-control" placeholder="Select Priority">
+                              <option>Major</option>
+                              <option>Minor</option>
+                              <option>Blocker</option>
+                            </select>
+                          </div>
+
+                          <input type="submit" class="btn btn-success" value="Create"/>                        
                       </div>
                   </div>
               </form>
