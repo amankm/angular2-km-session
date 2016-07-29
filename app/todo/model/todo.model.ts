@@ -11,11 +11,8 @@ import { Component } from '@angular/core';
     ` 
 })
 
-export class TodoComponent {
-    id : number;
-    title : string;
-    description : string;
-    dateCreated : Date = new Date();
-    isCompleted : boolean = false;
+export class TodoModel {
+    constructor(public title:string = "", public description :string = "", public priority:string = "Minor",
+                public dateCreated:Date = new Date(), public isCompleted:boolean=false){}
 
 }

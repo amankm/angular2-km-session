@@ -27,7 +27,17 @@
     <body>
             <todo-banner></todo-banner>
             <todo-form></todo-form>
-            <todo-list></todo-list>
+            <!--<table class="table">
+                <tr *ngFor="let todo of todos">
+                    <td><input type="checkbox" checked/> </td>
+                    <td>{{todo.title}}</td>
+                    <td>{{todo.description}}</td>
+                    <td>{{todo.isCompleted?'Completed':'Pending'}}</td>
+                    <td>{{todo.dateCreated.toLocaleDateString()}}</td>
+                    &lt;!&ndash;<td><input type="checkbox"  </td>&ndash;&gt;
+                </tr>
+            </table>-->
+            <todo-list [todolist]="todos"></todo-list>
             <my-app></my-app>
   </body>    
   </html>
